@@ -64,28 +64,11 @@ class _HomeScreenState extends State<HomeScreen> {
           appController.updateCandleList(map);
         }
       },
-      onDone: () {
-        // Connection closed
-        setState(() {
-          isConnected = false;
-        });
-        print('WebSocket connection closed');
-      },
-      onError: (error) {
-        // Connection error
-        setState(() {
-          isConnected = false;
-        });
-        print('WebSocket connection error: $error');
-      },
+      onDone: () {},
+      onError: (error) {},
       cancelOnError:
           true, // Automatically cancel the stream subscription on error
     );
-
-    setState(() {
-      isConnected = true;
-    });
-    print('WebSocket connection successful');
   }
 
   @override

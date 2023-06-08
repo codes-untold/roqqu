@@ -58,9 +58,9 @@ class BottomBar extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.transparent),
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
                   child: Text(
-                    'Order History',
+                    'History',
                     style: AppStyles.boldText.copyWith(color: Colors.white),
                   ),
                 ),
